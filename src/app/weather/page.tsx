@@ -2,8 +2,14 @@ import WeatherForm from "@/components/weather/weatherForm";
 import WeatherList from "@/components/weather/weatherList";
 import React from "react";
 
+interface SearchParams{
+    searchParams: {
+        cityName: string;
+    };
+}
 
-const Weather = async ({ searchParams }) => {
+
+const Weather = async ({ searchParams }: SearchParams) => {
   const city = (await searchParams).cityName;
   return (
     <div className="flex justify-center h-screen bg-cover" style={{ backgroundImage: "url('/images/weather.jpg')"} }>
