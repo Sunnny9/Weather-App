@@ -1,9 +1,20 @@
-const WeatherList = async ({ city }) => {
+interface WeatherData {
+ city: string;
+ temp: number;
+}
+
+interface WeatherListProps {
+    city: string;
+  }
+
+
+
+const WeatherList = async ({ city }: WeatherListProps) => {
   if (!city?.trim()) {
     return null; 
   }
   const res = await fetch(`http://localhost:3001/weather?city=${city}`);
-  const json = await res.json();
+  const json: WeatherData[] = await res.json();
 
   if (!json?.length) {
     return <p>{`${city} is not found`}</p>;
@@ -11,7 +22,7 @@ const WeatherList = async ({ city }) => {
 
   return (
     <div className="flex gap-4">
-      {json.map((item, index) => (
+      {json.map((item: WeatherData, index: number) => (
         <div key={index}>
           <p>
             Temperature of{" "}
@@ -26,3 +37,4 @@ const WeatherList = async ({ city }) => {
 };
 
 export default WeatherList;
+
