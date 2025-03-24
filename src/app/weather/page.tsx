@@ -10,7 +10,7 @@ interface SearchParams{
 
 
 const Weather = async ({ searchParams }: SearchParams) => {
-  const city = (await searchParams).cityName;
+    const city = searchParams.cityName;
   return (
     <div className="flex justify-center h-screen bg-cover" style={{ backgroundImage: "url('/images/weather.jpg')"} }>
     
