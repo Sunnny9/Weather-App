@@ -1,0 +1,64 @@
+{
+    "weather": [
+      {
+        "id": "227c",
+        "city": "Ahmedabad",
+        "temp": 30
+      },
+      {
+        "id": "2aff",
+        "city": "Porbandar",
+        "temp": 32
+      },
+      {
+        "id": "ee05",
+        "city": "Rajkot",
+        "temp": 33
+      },
+      {
+        "id": "e24c",
+        "city": "Vadodara",
+        "temp": 10
+      },
+      {
+        "id": "d269",
+        "city": "Mehsana",
+        "temp": 40
+      },
+      {
+        "id": "41fa",
+        "city": "Surat",
+        "temp": 50
+      },
+      {
+        "id": "f3da",
+        "city": "Banaskantha",
+        "temp": 60
+      },
+      {
+        "id": "137c",
+        "city": "Jamnagar",
+        "temp": 15
+      },
+      {
+        "id": "ce7f",
+        "city": "Bhavnagar",
+        "temp": 25
+      },
+      {
+        "id": "43aa",
+        "city": "Goa",
+        "temp": 35
+      },
+      {
+        "id": "43aa",
+        "city": "Mandva",
+        "temp": 35
+      },
+      {
+        "id": "43aa",
+        "city": "Kutiyana",
+        "temp": 35
+      }
+    ]
+  }
