@@ -1,5 +1,9 @@
 const WeatherList = async ({ city }) => {
-  const res = await fetch(`http://localhost:3001/weather?city=${city}`);
+  if (!city?.trim()) {
+    return null;
+  }
+
+  const res = await fetch(`http://localhost:3001/weather?city=${cityName}`);
   const json = await res.json();
 
   if (!json?.length) {
