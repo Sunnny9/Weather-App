@@ -3,7 +3,7 @@ const WeatherList = async ({ city }) => {
     return null;
   }
 
-  const res = await fetch(`http://localhost:3001/weather?city=${cityName}`);
+  const res = await fetch(`http://localhost:3001/weather?city=${city}`);
   const json = await res.json();
 
   if (!json?.length) {
